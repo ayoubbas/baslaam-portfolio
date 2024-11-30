@@ -1,0 +1,24 @@
+.header {
+  background-color: black;
+  width: 100%;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between    ;
+  align-items:center ;
+  color: wheat;
+}
+
+.navbar {
+    &__list{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between    ;
+        gap: 1rem;
+
+    }
+  &__link {
+    color: wheat;
+    text-decoration: none;
+  }
+}
