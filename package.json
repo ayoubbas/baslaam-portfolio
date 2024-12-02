@@ -10,14 +10,14 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.0.1",
     "react-scripts": "5.0.1",
-    "sass": "^1.81.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "compile:sass": "sass styles/main.scss App.scss"
   },
   "eslintConfig": {
     "extends": [
@@ -36,5 +36,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "my portfolio 2025",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.81.0"
   }
 }

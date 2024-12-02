@@ -1,22 +1,26 @@
 .header {
-  background-color: green;
+  // background-color: green;
   width: 100%;
   padding: 20px;
 
-  display: flex;
-  justify-content: space-between    ;
-  align-items:center ;
-  color: wheat;
+  &__container {
+    width: 80%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: wheat;
+  }
 }
 
 .navbar {
-    &__list{
-        list-style-type: none;
-        display: flex;
-        justify-content: space-between    ;
-        gap: 1rem;
-
-    }
+  &__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
   &__link {
     color: wheat;
     text-decoration: none;
