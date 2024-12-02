@@ -6,9 +6,9 @@ import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Blog from "./components/Blog";
-import Bars from "./assets/icons/Bars";
+// import Bars from "./assets/icons/Bars";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
