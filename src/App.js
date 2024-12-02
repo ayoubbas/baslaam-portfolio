@@ -6,6 +6,9 @@ import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Blog from "./components/Blog";
+import Bars from "./assets/icons/Bars";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
@@ -13,7 +16,6 @@ function App() {
       <header className="header">
         <div className="header__container">
           <h1 className="logo">hello</h1>
-
           <nav className="navbar">
             <ul className="navbar__list">
               <li className="navbar__item">
@@ -43,6 +45,7 @@ function App() {
               </li>
             </ul>
           </nav>
+          <FontAwesomeIcon icon={faBars} className="menu-bar" />
         </div>
       </header>
 
