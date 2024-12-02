@@ -1,3 +1,5 @@
+
+
 .header {
   // background-color: green;
   width: 100%;
@@ -10,19 +12,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: wheat;
+    color: $text-light;
+  }
+  &__logo{
+    font-size: 3rem;
   }
 }
 
-.navbar {
-  &__list {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-  }
-  &__link {
-    color: wheat;
-    text-decoration: none;
-  }
-}
+

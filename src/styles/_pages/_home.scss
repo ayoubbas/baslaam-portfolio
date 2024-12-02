@@ -1,13 +1,16 @@
 @import "../_abstracts/variables";
 
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
 body {
   margin: 0 auto;
-  background-color: $primary-dark;
+  height: 100vh;
+  background: linear-gradient(45deg, $primary-dark, $primary-accent);
 }

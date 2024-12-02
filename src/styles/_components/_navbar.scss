@@ -1,0 +1,28 @@
+.navbar {
+  &__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  &__link {
+    color: $text-light;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background-color: $text-light;
+      bottom: 0;
+      left: 0;
+      display: inline-block;
+      &:hover {
+        width: 100%;
+      }
+    }
+  }
+}

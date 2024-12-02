@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <header className="header">
         <div className="header__container">
-          <h1 className="logo">hello</h1>
+          <h1 className="header__logo">hello</h1>
           <nav className="navbar">
             <ul className="navbar__list">
               <li className="navbar__item">
