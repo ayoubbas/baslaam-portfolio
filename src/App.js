@@ -9,42 +9,15 @@ import Blog from "./components/Blog";
 // import Bars from "./assets/icons/Bars";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className="App">
       <header className="header">
         <div className="header__container">
-          <h1 className="header__logo">hello</h1>
-          <nav className="navbar">
-            <ul className="navbar__list">
-              <li className="navbar__item">
-                <Link className="navbar__link" to="/">
-                  Home
-                </Link>
-              </li>
-              <li className="navbar__item">
-                <Link className="navbar__link" to="/services">
-                  Services
-                </Link>
-              </li>
-              <li className="navbar__item">
-                <Link className="navbar__link" to="/portfolio">
-                  portfolio
-                </Link>
-              </li>
-              <li className="navbar__item">
-                <Link className="navbar__link" to="/Blog">
-                  Blog
-                </Link>
-              </li>
-              <li className="navbar__item">
-                <Link className="navbar__link" to="/contact">
-                  contact
-                </Link>
-              </li>
-            </ul>
-          </nav>
+          <h1 className="header__logo">Baslaam</h1>
+          <Navbar/>
           <FontAwesomeIcon icon={faBars} className="menu-bar" />
         </div>
       </header>
