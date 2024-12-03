@@ -10,6 +10,7 @@ import Blog from "./components/Blog";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "./components/Navbar";
+import Bars from "./assets/icons/Bars";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           <div className="header__container">
             <h1 className="header__logo">Baslaam</h1>
             <Navbar />
-            <FontAwesomeIcon icon={faBars} className="menu-bar" />
+            {/* <FontAwesomeIcon icon={faBars} className="menu-bar" /> */}
           </div>
         </header>
 

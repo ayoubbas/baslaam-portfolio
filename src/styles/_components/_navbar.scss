@@ -1,10 +1,15 @@
 .navbar {
-  display: none;
   &__list {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+    &.open {
+      display: flex;
+    }
+    &.close {
+      display: none;
+    }
   }
   &__link {
     color: $text-light;

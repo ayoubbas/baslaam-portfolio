@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import Bars from "../assets/icons/Bars";
 
 const Navbar = () => {
   const location = useLocation();
-  console.log(location);
-  
+  const [isOpen, setIsOpen] = useState(false);
+  console.log(isOpen);
+
+  const handleOpen = () => {
+    setIsOpen(!isOpen);
+    console.log(isOpen);
+    
+  };
   return (
-    <nav className="navbar">
-      <ul className="navbar__list">
+    <nav className={`navbar`}>
+      <Bars setIsOpen={handleOpen} />
+
+      <ul className={`navbar__list ${isOpen ? "open" : "close"}`}>
         <li className="navbar__item">
           <Link
             className={`navbar__link ${
