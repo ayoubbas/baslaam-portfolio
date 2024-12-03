@@ -1,0 +1,23 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0 auto;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($primary-dark, 0.95),
+      rgba($primary-accent, 0.95)
+    ),
+    url(../../assets/images/pexels-harold-vasquez-853421-2653362.webp);
+  background-position: center;
+  background-size: cover;
+}

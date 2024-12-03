@@ -6,4 +6,10 @@
   padding: 0.5rem;
   width: 2rem;
   height: 2rem;
+  transition: all 0.2s;
+
+  cursor: pointer;
+  &:active {
+    transform: scale(1.1);
+  }
 }
