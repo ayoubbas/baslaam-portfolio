@@ -11,6 +11,8 @@
   top: 0;
   right: 0rem;
   z-index: 2000;
+  background-color: $text-light;
+  color: $primary-dark;
   cursor: pointer;
   &:active {
     transform: scale(1.1);

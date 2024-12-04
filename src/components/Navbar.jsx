@@ -7,24 +7,26 @@ const Navbar = () => {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
 
-// handle open navbar in small screen function
+  // handle open navbar in small screen function
   const handleOpen = () => {
     setIsOpen(!isOpen);
+  };
+  const handleClose = () => {
+    setIsOpen(false);
   };
 
   return (
     <nav className={`navbar`}>
-      {
-        !isOpen ? (
-          <Bars setIsOpen={handleOpen} />
-        ) : (
-          <Close setIsOpen={handleOpen} />
-        )
-      }
+      {isOpen ? (
+        <Close setIsOpen={handleOpen} />
+      ) : (
+        <Bars setIsOpen={handleOpen} />
+      )}
 
-      <ul className={`navbar__list ${isOpen ? "open" : "close"}`}>
+      <ul className={`navbar__list ${isOpen ? "open":"close"}`}>
         <li className="navbar__item">
           <Link
+            onClick={handleClose}
             className={`navbar__link ${
               location.pathname === "/" ? "active-link" : ""
             }`}
@@ -35,6 +37,7 @@ const Navbar = () => {
         </li>
         <li className="navbar__item">
           <Link
+            onClick={handleClose}
             className={`navbar__link ${
               location.pathname === "/services" ? "active-link" : ""
             }`}
@@ -45,6 +48,7 @@ const Navbar = () => {
         </li>
         <li className="navbar__item">
           <Link
+            onClick={handleOpen}
             className={`navbar__link ${
               location.pathname === "/portfolio" ? "active-link" : ""
             }`}
@@ -55,6 +59,7 @@ const Navbar = () => {
         </li>
         <li className="navbar__item">
           <Link
+            onClick={handleOpen}
             className={`navbar__link ${
               location.pathname === "/Blog" ? "active-link" : ""
             }`}
@@ -65,6 +70,7 @@ const Navbar = () => {
         </li>
         <li className="navbar__item">
           <Link
+            onClick={handleOpen}
             className={`navbar__link ${
               location.pathname === "/contact" ? "active-link" : ""
             }`}

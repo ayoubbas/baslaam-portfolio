@@ -16,7 +16,6 @@ function App() {
           <div className="header__container">
             <h1 className="header__logo">Baslaam</h1>
             <Navbar />
-            {/* <FontAwesomeIcon icon={faBars} className="menu-bar" /> */}
           </div>
         </header>
 
