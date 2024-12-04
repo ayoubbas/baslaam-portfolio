@@ -1,21 +1,26 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Bars from "../assets/icons/Bars";
+import Close from "../assets/icons/Close";
 
 const Navbar = () => {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen);
 
+// handle open navbar in small screen function
   const handleOpen = () => {
     setIsOpen(!isOpen);
-    console.log(isOpen);
-    
   };
+
   return (
     <nav className={`navbar`}>
-      <Bars setIsOpen={handleOpen} />
-      
+      {
+        !isOpen ? (
+          <Bars setIsOpen={handleOpen} />
+        ) : (
+          <Close setIsOpen={handleOpen} />
+        )
+      }
 
       <ul className={`navbar__list ${isOpen ? "open" : "close"}`}>
         <li className="navbar__item">

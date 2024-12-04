@@ -1,0 +1,21 @@
+.close-navbar {
+  // font-size: 1rem;
+  display: none;
+  border: 2px solid $text-light;
+  border-radius: 50%;
+  padding: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.2s;
+  position: absolute;
+  top: 0;
+  right: 0rem;
+  z-index: 2000;
+  cursor: pointer;
+  &:active {
+    transform: scale(1.1);
+  }
+  @include respond(tab-land) {
+    display: block;
+  }
+}
