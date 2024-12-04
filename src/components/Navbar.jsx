@@ -15,6 +15,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar`}>
       <Bars setIsOpen={handleOpen} />
+      
 
       <ul className={`navbar__list ${isOpen ? "open" : "close"}`}>
         <li className="navbar__item">

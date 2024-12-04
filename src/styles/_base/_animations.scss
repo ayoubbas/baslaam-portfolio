@@ -2,18 +2,21 @@
   0% {
     transform: translateX(100%);
   }
-  80% {
-    transform: translateX(-5%);
+  70% {
+    transform: translateX(-10%); /* Bigger overshoot */
+  }
+  85% {
+    transform: translateX(5%); /* Bounce back */
   }
   100% {
-    transform: translateX(0%);
+    transform: translateX(0);
   }
 }
 @keyframes slide-out {
   0% {
     transform: translateX(0%);
   }
-  
+
   100% {
     transform: translateX(100%);
   }

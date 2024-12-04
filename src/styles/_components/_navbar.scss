@@ -6,11 +6,10 @@
     gap: 2rem;
     &.open {
       display: flex;
-      animation: slide-in 1s ease ;
-      
+      animation: slide-in 1s ease forwards;
     }
     &.close {
-      animation: slide-out 1s ease ;
+      animation: slide-out 1s ease forwards;
       // display: none;
     }
     @include respond(tab-land) {
@@ -32,9 +31,20 @@
     font-size: 2rem;
     transition: all 0.3s ease;
     position: relative;
-    padding-bottom: 1rem;
     display: inline-block;
     padding: 0.5rem 0.5rem 1rem 0.5rem;
+    border-radius: .5rem;
+
+    @include respond(tab-land) {
+  padding: 1rem 1rem 1rem 1rem;
+    }
+    &:hover {
+
+      @include respond(tab-land) {
+        background-color: $secondary-dark ;
+        transform: translateX(-1rem) skew(10deg, 2deg);
+      }
+    }
     &:active {
       background-color: $primary-accent;
       transform: translateY(0.5rem);
@@ -52,9 +62,16 @@
     }
     &.active-link::after {
       width: 100%;
+      @include respond(tab-land) {
+        width: 0%;
+      }
     }
     &:hover::after {
       width: 100%;
+      @include respond(tab-land) {
+        width: 0%;
+        transform: translateX(-1rem);
+      }
     }
   }
 }
