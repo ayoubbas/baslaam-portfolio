@@ -6,6 +6,8 @@
 }
 
 @import "_abstracts/variables";
+@import "_abstracts/mixins";
+
 @import "_layout/header";
 
 @import "_pages/home";
@@ -14,3 +16,4 @@
 @import "_components/navbar";
 
 @import "_base/base";
+@import "_base/animations";
